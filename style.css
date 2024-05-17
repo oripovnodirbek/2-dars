@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela&display=swap');
+
+* {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+
+body {
+  font-family: 'Varela', sans-serif;
+  height: 100vh;
+  background-image: url(./images/NASA_space_black_red_blue_Moon_universe_space_travel-1751437.jpg!d);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container{
+    display: flex;
+    justify-content: center;align-items: center;
+    height: inherit;
+}
+
+.hidden {
+    display: none;
+}
+.btn {
+    border: 0px;
+    background-color: transparent;
+    font-family: inherit;
+    font-style: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+.show-btn {
+    background-color: #474b4f;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background 0.5s;
+}
+.show-btn :hover {
+    background-color: #3a3d40;
+}
+
+.modal {
+    position: fixed;
+    max-width: 500px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    z-index: 100;
+}
+
+.modal-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.exit-btn {
+    color: #222;
+    font-size: 20px;
+}
+.modal-title {
+    margin-bottom: 15px;
+}
+
+/* overlay */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+}
